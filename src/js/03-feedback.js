@@ -12,6 +12,11 @@ savedData();
 
 function submitForm(e) {
   e.preventDefault();
+  const formData = {
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  console.log(formData);
   form.reset();
   localStorage.removeItem(feedbackForm);
 }
